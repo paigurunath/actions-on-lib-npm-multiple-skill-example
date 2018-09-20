@@ -1,0 +1,9 @@
+---
+applications:
+- name: google-voice-npm-lib
+  instances: 1
+  random-route: true
+  memory:  256M
+  command: node index.js
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+  host: google-voice-npm
